@@ -5,7 +5,7 @@ class New extends Component {
 
     render() {
         return <div>
-            <slider>
+            <slider key="id">
            
           <slide><p>AFCON 19 - Super Eagles are the first team to qualify for round 16</p></slide> 
           <slide><p>Nigerian female footballers kicking against lack of support</p></slide> 
@@ -13,7 +13,7 @@ class New extends Component {
           <slide><p>Meet Gernot Rohr, the MAN in-charge of the Super Eagles</p></slide> 
           
            </slider>
-           <button>Get Started</button>
+           <button className="discover">DISCOVER</button>
            </div>
     }
 }

@@ -7,8 +7,7 @@ class Error extends Component{
     render(){
         return(
             <div>
-                <h1>Error</h1>
-                <p>Wrong!!!!!!!</p>
+                <img src="/pics/404.jpg" alt="error page" width="100%" height="100%"/> 
             </div>
         )
     }

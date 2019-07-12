@@ -33,7 +33,7 @@
     margin-top: 30px;
 } */
 
-.nav .appy li {
+.nav a li {
     width: 150px;
     line-height: 20px;
     text-decoration: none;
@@ -54,9 +54,14 @@ a:hover {
     transition: 0.6s;
 }
 
+.active {
+    background: red;
+   
+  }
+
 
 .bigfoot {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 100px;
     max-height: 100%;
@@ -77,6 +82,8 @@ a:hover {
     font-weight: bold;
     float: right;
     margin-top: 0px;
+    margin-right: 850px;
+    text-justify: auto;
 }
 
 /* button
@@ -101,4 +108,113 @@ a:hover {
   display: flex;
   flex: 33%;
   float: left;
+}
+
+#input-container
+{
+    position: absolute;
+    top: 4%;
+    left: 32%;
+    margin-right:40px;
+    transform: translate(-50%,-50%);
+    background-color:transparent;
+    width: 500px;
+}
+
+input
+{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    border-radius: 0;
+}
+input[id="fname"]
+{
+    background: white;
+    width: 340px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+button
+{
+    position: relative;
+    left: -5px;
+    /* border-radius: 0 25px 25px 0; */
+    width: 230px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #DAA520;
+    color: #fff;
+
+}
+
+.btnMain {
+    width: 90px;
+    height: 38px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background:green;
+}
+
+
+.btnMain:hover {
+    background: #ff0000;
+}
+
+input + .btnMain {
+    margin: 0 25px;
+   }
+
+.aboutText1 {
+        text-decoration: underline;
+        font-weight: bold;
+        font-family: "Lucida Console", "Monaco", "monospace";
+        text-align: center;
+}
+
+.aboutText {
+    color:black;
+    font-family: "Lucida Console", "Monaco", "monospace";
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    }
+
+.prof{
+    list-style: none;
+    height: 250px;
+    border:1px solid blueviolet;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background: #DAA520;
+
+}
+
+.prof .pro {
+    width: 150px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border:1px solid blueviolet;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }

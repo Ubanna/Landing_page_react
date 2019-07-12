@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Redirect, Link } from 'react-router-dom';
 // import Nav from "./components/Nav";
+import './final.css';
 
 class Login extends Component {
     constructor() {
@@ -51,6 +52,8 @@ class Login extends Component {
     render() {
         return (
             <div>
+                <img src="/pics/eagle.gif" alt="eagle" width="100%"className="eagle"/>
+                <img src="/pics/Flag.gif" alt="eagle" className="eagle"/>
                     {/* <Nav hideNav={true}/> */}
 
                 <div className="FormCenter">
@@ -66,7 +69,7 @@ class Login extends Component {
                         </div>
 
                         <div className="FormField">
-                            <button className="FormField__Button mr-20">Sign In</button> <Link to="/" className="FormField__Link">Create an account</Link>
+                            <button className="FormField__Button mr-20">Sign In</button> <Link to="/register" className="FormField__Link">Create an account</Link>
                         </div>
                     </form>
                 </div>

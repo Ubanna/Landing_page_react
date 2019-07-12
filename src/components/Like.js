@@ -1,13 +1,18 @@
 import React, {Component} from 'react'
+import CommentBox from './CommentBox';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThumbsUp} from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+library.add(faThumbsUp);
+
 
 
 class Like extends Component {
     state = {
         likes: 0,
-        
+        showResults: false
     }
+
     increaseLikes =()=> {
         this.setState((prevState) => {
             return {
@@ -26,14 +31,21 @@ class Like extends Component {
             }
         })
     }
+
+    addComment =()=> {
+        this.setState({ showResults: true });
+    }
  
 
     render(){
         return(
-            <div>                
-                <button onClick={this.increaseLikes}><i className="fa fa-thumbs-up">Like</i></button>
+            <div>
+                   <h3>Likes: {this.state.likes}</h3>                
+                <button onClick={this.increaseLikes}>Like</button>
                 <button onClick={this.decreaseLikes}>Unlike</button>
-                <h3>Likes: {this.state.likes}</h3>              
+                {/* <button onClick={this.addComment}>Comment</button>
+                { this.state.showResults ? <CommentBox /> : null } */}
+                           
             </div>
         )
         

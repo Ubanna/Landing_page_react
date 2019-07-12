@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import Header from './Header';
+import './final.css';
 
 class Register extends Component {
     constructor() {
@@ -50,7 +52,11 @@ console.log('The form was submitted with the following data:');
 
     render() {
        
-        return ( <div className="FormCenter">
+        return ( <div>
+           <img src="/pics/eagle.gif" alt="eagle" width="100%"className="eagle"/>
+                <img src="/pics/Flag.gif" alt="eagle" className="eagle"/>
+        
+        <div className="FormCenter">
             <form onSubmit={this.handleSubmit} className="FormFields">
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="name">Full Name</label>
@@ -72,9 +78,11 @@ console.log('The form was submitted with the following data:');
               </div>
 
               <div className="FormField">
-                  <button className="FormField__Button mr-20">Sign Up</button> <Link to="/sign-in" className="FormField__Link">I'm already member</Link>
+                  <button className="FormField__Button mr-20">Sign Up</button> <Link to="/" className="FormField__Link">I'm already member</Link>
               </div>
             </form>
+          </div>
+
           </div>
         )
     }

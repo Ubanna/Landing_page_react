@@ -15,7 +15,7 @@ import Logout from './components/Logout';
 import Profile from './components/Profile';
 import About from './components/About';
 import Register from './components/Register';
-import Services from './components/Services';
+import Comment from './components/Comment';
 import Error from './Error';
 
 
@@ -24,7 +24,6 @@ class Index extends Component {
     return (
 <div className="App">    
 <BrowserRouter>
-<Header />
 <div>
     <Switch>
     <Route exact path="/register" component={Register} />
@@ -32,12 +31,11 @@ class Index extends Component {
   <Route  path="/home" component={App} />
   <Route path="/about" component={About} />
   <Route path="/profile" component={Profile} />
-  <Route path="/services" component={Services} />
+  <Route path="/comment" component={Comment} />
   <Route  path="/logout" component={Logout} />
   <Route  component={Error} />
 </Switch>
 </div>
-<Footer />
 </BrowserRouter>
     </div>  )
   }
