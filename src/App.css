@@ -1,5 +1,53 @@
 body {
   margin: 0;
-  background-image: url(/pics/cream.jpg);
-  background-size: contain;
+  background: #f2f2f2;
 }
+.error{
+position: absolute;
+  margin-top: 700px;
+  z-index: 3;
+  margin-left: -1150px;
+  font-weight: bold;
+  font-size: 30px;
+  color: black
+}
+.likebtn{
+    border: none; 
+    padding: 7px 7px;
+    font-size: 15px; 
+    cursor: pointer;
+    margin: 6px;
+    border-radius: 3px;
+    width: 140px;
+    background: black;
+    border-radius: 15px;
+    color: white;
+}
+
+
+@media only screen and (max-width:830px) {
+
+      .App{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+
+    }
+    @media only screen 
+  and (min-width: 1024px) 
+  and (max-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+    .App{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    .aboutText1{
+      margin-top: 80px
+    }
+    .profile{
+      margin-top: 260px
+    }
+
+  }

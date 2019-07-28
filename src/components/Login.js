@@ -29,8 +29,11 @@ class Login extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-
-        let finalUser = JSON.parse(localStorage.getItem('users'));
+        if (this.state.email === "" || this.state.password === "") {
+            alert("Kindly complete all fields");
+            return false
+        }
+        const finalUser = JSON.parse(localStorage.getItem('users'));
         const filArr = finalUser.filter(user =>
             user.email === this.state.email && user.password === this.state.password)
 
@@ -51,7 +54,7 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
+            <div className="loginMaster">
                 <img src="/pics/eagle.gif" alt="eagle" width="100%"className="eagle"/>
                 <img src="/pics/Flag.gif" alt="eagle" className="eagle"/>
                     {/* <Nav hideNav={true}/> */}

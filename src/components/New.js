@@ -4,7 +4,7 @@ import './new.css';
 class New extends Component {
 
     render() {
-        return <div>
+        return <div className="BigSlide">
             <slider key="id">
            
           <slide><p>AFCON 19 - Super Eagles are the first team to qualify for round 16</p></slide> 

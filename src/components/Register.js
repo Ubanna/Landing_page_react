@@ -52,7 +52,7 @@ console.log('The form was submitted with the following data:');
 
     render() {
        
-        return ( <div>
+        return ( <div className="registerMaster">
            <img src="/pics/eagle.gif" alt="eagle" width="100%"className="eagle"/>
                 <img src="/pics/Flag.gif" alt="eagle" className="eagle"/>
         

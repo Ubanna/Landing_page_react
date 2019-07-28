@@ -5,9 +5,10 @@ class Footer extends Component {
 
     render() {
         return <div className="bigfoot">
-          <footer className="addy"><img src="/pics/twitter.png" alt="twitter" width="40" height="40"/></footer>
-          <footer className="addy"><img src="/pics/instagram-logo.png" alt="instagram" width="40" height="40"/></footer>
-           <p className="smallfoot">Copyrights Nigerian Football Association 2019. All Rights Reserved</p>
+                    <a  href="#"><img src="/pics/facebook-circled.png" width= "60px"/></a>
+                    <a  href="#"><img src="/pics/youtube.png" width= "60px"/></a>
+                    <a  href="#"><img src="/pics/twitter-circled.png" width= "65px"/></a>
+                    <a  href="#"><img src="/pics/instagram-icon.png" width= "65px"/></a>
 
            </div>
     }

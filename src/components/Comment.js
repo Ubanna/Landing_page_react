@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Like from './Like';
 import Header from './Header';
 import Footer from './Footer';
+import FooterBefore from './FooterBefore';
 
 
 class Comment extends Component{
@@ -34,6 +35,7 @@ Read more at: https://www.vanguardngr.com/2019/07/super-eagles-need-a-jay-jay-in
          <p>Disclaimer </p>
         <p>Comments expressed here do not reflect the opinions of vanguard newspapers or any employee thereof.</p>
         <Like />
+        <FooterBefore />
         <Footer />
           </div>
 

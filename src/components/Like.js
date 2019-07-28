@@ -41,10 +41,9 @@ class Like extends Component {
         return(
             <div>
                    <h3>Likes: {this.state.likes}</h3>                
-                <button onClick={this.increaseLikes}>Like</button>
-                <button onClick={this.decreaseLikes}>Unlike</button>
-                {/* <button onClick={this.addComment}>Comment</button>
-                { this.state.showResults ? <CommentBox /> : null } */}
+                <button className="likebtn" onClick={this.increaseLikes} onClick={this.increaseLikes}>Like<i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+                <button className="likebtn" onClick={this.decreaseLikes} onClick={this.decreaseLikes}>Unlike<i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+              
                            
             </div>
         )

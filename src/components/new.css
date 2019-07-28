@@ -83,6 +83,7 @@ slide p
  width: 100%;
  margin-top: 340px;
  color: white;
+ font-weight: bold;
 }
 
 @keyframes slide 
@@ -97,11 +98,59 @@ slide p
 
 .discover {
     position: absolute;
-    margin-top: 370px;
-    margin-left: 1500px;
-    background:brown;
+    margin-top: 340px;
+    margin-left: 1330px;
+    background: black;
+    width: 220px;
+    border-radius: 15px;
 }
  
 .discover:hover{
     background: #ff0000;
+}
+
+@media only screen and (max-width:830px) {
+
+    .BigSlide{
+        width: 768px;
+        /* height: 432px; */
+    }
+    slider
+{
+ display: block;
+ width: 100%;
+ height: 18%;
+}
+
+slider > * 
+{
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+}
+slide p
+{
+ font-family: 'Gothic medium';
+ font-size: 25px;
+ text-align: center;
+ display: inline-block;
+ width: 90%;
+ margin-top: 300px;
+ color: white;
+ font-weight: bold;
+ margin-left: 30px;
+}
+
+}
+
+@media only screen 
+and (min-width: 1024px) 
+and (max-width: 1366px) 
+and (-webkit-min-device-pixel-ratio: 2){
+    .discover {
+        margin-left: 720px;
+        margin-top: 500px;
+        width: 200px;
+    }
 }

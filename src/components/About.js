@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Header from './Header';
 import Footer from './Footer';
+import FooterBefore from './FooterBefore';
 
 
 class About extends Component{
@@ -8,7 +9,7 @@ class About extends Component{
     render(){
       
         return(
-            <div>
+            <div >
                 <Header />
                 <h1 className="aboutText1">ABOUT US</h1>
             
@@ -19,6 +20,7 @@ class About extends Component{
                 with their recent title in 2013, after defeating Burkina Faso in the final.
                 </p>
                 <img src="/pics/Super-Eagles-1.jpg" alt="nigerian team" height="600" width="100%"/> 
+                <FooterBefore />
                 <Footer />
                 </div>
         )
