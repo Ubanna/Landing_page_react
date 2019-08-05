@@ -95,7 +95,10 @@ position: absolute;
         border-bottom: none;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         padding: 5px;
+        word-break: inherit;
+    
       }
 
 
