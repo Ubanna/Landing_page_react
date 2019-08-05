@@ -13,7 +13,7 @@ class New extends Component {
           <slide><p>Meet Gernot Rohr, the MAN in-charge of the Super Eagles</p></slide> 
           
            </slider>
-           <button className="discover">DISCOVER</button>
+           <a href="/profile"><button className="discover">DISCOVER</button></a>
            </div>
     }
 }

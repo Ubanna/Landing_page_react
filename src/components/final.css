@@ -14,7 +14,7 @@ body {
     border: transparent;
     box-sizing: border-box;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 520px;
    }
 
 .product {
@@ -183,7 +183,7 @@ input
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 310px;
+  margin-top: 430px;
   box-sizing: border-box;
   justify-content: space-evenly;
 }
@@ -242,7 +242,7 @@ and (-webkit-min-device-pixel-ratio: 2){
 }
  
 .products {
-  margin-top: 660px;
+  margin-top: 700px;
 }
 .eagle{
   height: 100%;

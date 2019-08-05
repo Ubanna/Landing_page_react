@@ -23,7 +23,54 @@ position: absolute;
     border-radius: 15px;
     color: white;
 }
+.discoverContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 
+.newsHead{
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.newsContainer{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 79.9%;
+  margin-left: 10.8%;
+  background: #f2f2f2;
+  box-shadow: 0px 5px 20px;
+}
+
+.newsTitle{
+  font-size: 1em;
+  color: black;
+}
+
+.newsImage{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.newsUrl{
+  font-size: 11px;
+  color: black;
+}
+
+.newsHolder{
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+  .newsP{
+    margin-right: "1200px";
+    color: "black";
+  }
 
 @media only screen and (max-width:830px) {
 
@@ -31,9 +78,32 @@ position: absolute;
         position: relative;
         overflow: hidden;
         width: 100%;
+      } 
+
+      .newsContainer{
+        display: flex;
+        overflow-x: auto;
+        width: 100%; 
+        margin: 0 auto;
       }
 
-    }
+      .newsHolder{
+        border: 1px solid grey;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+      }
+
+
+  .newsP{
+    margin-right: 200px;
+    color: black;
+    font-size: 1em;
+  }
+ }
     @media only screen 
   and (min-width: 1024px) 
   and (max-width: 1366px) 
@@ -49,5 +119,17 @@ position: absolute;
     .profile{
       margin-top: 260px
     }
-
   }
+
+
+  /* @media only screen and (max-width:2560px) {
+      .App{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .products {
+        margin-top: 1000px;
+      }
+    } */

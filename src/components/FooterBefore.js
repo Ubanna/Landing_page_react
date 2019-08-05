@@ -6,10 +6,10 @@ class FooterBefore extends Component {
     render() {
         return <div className="firstFooter">
             <div className="beforefoot">
-                    <a  className="img" href="#"><img  src="/pics/access.jpg" width= "60px"/></a>
-                    <a  className="img" href="#"><img src="/pics/arik.jpg" width= "60px"/></a>
-                    <a  className="img" href="#"><img src="/pics/dangote.png" width= "65px"/></a>
-                    <a  className="img" href="#"><img src="/pics/glo1.jpg" width= "65px"/></a>
+                    <a  className="img" href="https://www.accessbankplc.com/" target="_blank"><img  src="/pics/access.jpg" width= "60px"/></a>
+                    <a  className="img" href="https://www.arikair.com/" target="_blank" ><img src="/pics/arik.jpg" width= "60px"/></a>
+                    <a  className="img" href="https://dangote.com/" target="_blank"><img src="/pics/dangote.png" width= "65px"/></a>
+                    <a  className="img" href="https://www.gloworld.com/ng/" target="_blank"><img src="/pics/glo1.jpg" width= "65px"/></a>
                     </div>
 
                    <div className="beforefoot">
