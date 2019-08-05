@@ -65,11 +65,12 @@ position: absolute;
   display: flex;
   flex-direction: row;
   padding: 5px;
+  word-break: break-all;
 }
 
   .newsP{
-    margin-right: "1200px";
-    color: "black";
+    margin-right: 1200px;
+    color: black;
   }
 
 @media only screen and (max-width:830px) {
@@ -120,16 +121,3 @@ position: absolute;
       margin-top: 260px
     }
   }
-
-
-  /* @media only screen and (max-width:2560px) {
-      .App{
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-      }
-
-      .products {
-        margin-top: 1000px;
-      }
-    } */
