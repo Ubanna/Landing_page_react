@@ -6,8 +6,76 @@ import Random from './Gallery';
 import { NavLink, Redirect, Link } from 'react-router-dom/cjs/react-router-dom';
 import Register from './Register';
 import { QuestionAnswer, Person, Home, SentimentSatisfiedAlt, Forum } from '@material-ui/icons';
+import setInStorage from './setInStorage';
+import getFromStorage from './getFromStorage';
+import 'whatwg-fetch';
+import jwt_decode from 'jwt-decode';
+
+
+const token = localStorage.getItem('the_main_app')
+const user = jwt_decode(token)
 
 class Header extends Component {
+
+    state = {
+        isLoading: true,
+        token: '',
+    }
+
+
+    logout = () => {
+        console.log('happy')
+        this.setState({
+          isLoading: true,
+        });
+        const obj = getFromStorage('the_main_app');
+        if (obj && obj.token) {
+          const { token } = obj;
+          // Verify token
+          fetch('http://localhost:3006/logout?token=' + token)
+            .then(res => res.json())
+            .then(json => {
+              if (json.success) {
+                  localStorage.removeItem('the_main_app')
+                this.setState({
+                  token: '',
+                  isLoading: false
+                });
+              } else {
+                this.setState({
+                  isLoading: false,
+                });
+              }
+            });
+        } 
+      }
+    
+      componentDidMount() {
+        const obj = getFromStorage('the_main_app');
+        if (obj && obj.token) {
+          const { token } = obj;
+          console.log(token)
+          // Verify token
+          fetch('http://localhost:3006/verify?token=' + token)
+            .then(res => res.json())
+            .then(json => {
+              if (json.success) {
+                this.setState({
+                  token,
+                  isLoading: false
+                });
+              } else {
+                this.setState({
+                  isLoading: false,
+                });
+              }
+            });
+        } else {
+          this.setState({
+            isLoading: false,
+          });
+        }
+      }
 
 
     handleSubmit(e) {
@@ -42,6 +110,7 @@ class Header extends Component {
         <NavLink to="/" className="appy" activeClassName="active" exact style={{ textDecoration: 'none' }}>
         <li>LOGOUT</li>
         </NavLink>
+        <button onClick={this.logout}>Logout</button>
             </ul>
              <div className="mheader">
              <img id="logo" src="/pics/logonig.png" alt="nigerianteam" height="50" width="50" style={{marginLeft: '-95px'}}/>
