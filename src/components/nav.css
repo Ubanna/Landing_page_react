@@ -1,0 +1,36 @@
+
+.active {
+    color: black;
+   
+  }
+
+
+.bigfoot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: black;
+    line-height: 50px;
+    padding-top: 15px;  
+  }
+
+
+button
+{
+    position: relative;
+    left: -5px;
+    width: 230px;
+    height: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #DAA520;
+    color: #fff;
+
+}
+
+
+
+    

@@ -1,0 +1,11 @@
+.aboutText1 {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: "Lucida Console", "Monaco", "monospace";
+    text-align: center;
+}
+
+.aboutText {
+color:black;
+font-family: "Lucida Console", "Monaco", "monospace";
+}

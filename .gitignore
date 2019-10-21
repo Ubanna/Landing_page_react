@@ -17,3 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 
 client/node_modules
+
+# DB keys
+.env

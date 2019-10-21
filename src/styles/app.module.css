@@ -1,0 +1,122 @@
+.gridContainer {
+    /* position: absolute; */
+    /* transform: translateY(215%) */
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    border: transparent;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.product {
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.product:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.newsHead {
+    margin-top: 80px;
+    /* margin-bottom: 100px; */
+}
+
+.newsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 79.9%;
+    margin-left: 10.8%;
+    background: #f2f2f2;
+    box-shadow: 0px 5px 20px;
+}
+
+.newsTitle {
+    font-size: 1em;
+    color: black;
+}
+
+.newsImage {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.newsUrl {
+    font-size: 11px;
+    color: black;
+}
+
+.newsHolder {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-left: none;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    word-break: break-all;
+}
+
+.newsP {
+    margin-right: 1200px;
+    color: black;
+}
+
+@media only screen and (max-width:843px) {
+    .gridContainer {
+        position: absolute;
+        left: 0; right: 0; bottom: 0;
+        z-index: 2;
+        transform: translateY(45%)
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+    }
+
+    .product {
+        width: 95%;
+    }
+
+    .newsContainer {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .newsHolder {
+        border: 1px solid grey;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+        word-break: inherit;
+    }
+
+    .newsP {
+        margin-right: 200px;
+        color: black;
+        font-size: 1em;
+    }
+}

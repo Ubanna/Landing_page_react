@@ -1,0 +1,165 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 167px;
+    }
+
+    .jersey{
+        width: 650px;
+        height: 800px;
+        margin-top: 20px;
+    }
+
+    .profButton{
+        width: 170px;
+        background: black;
+        border-radius: 15px;
+    }
+
+
+    .profButton2{
+        position: relative;
+        width: 170px;
+        background: black;
+        border-radius: 15px;
+        transform: translate(-140%, 800%); 
+        z-index: 1000;
+    }
+
+.prof{
+    list-style: none;
+    height: 250px;
+    border:none;
+    background: transparent;
+}
+
+.profileStyle{
+    text-decoration: none;
+    color: green;
+    display: flex;
+}
+
+.profileStyle + .profileStyle{
+    margin: 15px;
+}
+
+.proStyle{
+    margin: 60px;
+   
+}
+
+.profUl {
+    list-style: none;
+}
+
+.prof .pro {
+    width: 150px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;  
+}
+
+.editContainer {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.input {
+    background: #e5e5e5;
+    padding: 12px 0;
+    border: transparent;
+    border-radius: 7px;
+}
+
+.editbutton{
+    padding: 12px 0;
+    background: black;
+    border-radius: 7px;
+}
+
+.error1 { 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px;
+  }
+
+
+@media only screen and (max-width:1170px) {
+
+    .profButton2{
+        position: relative;
+        margin-left: 210px;
+        width: 140px;
+        transform: translate(50%, -200%)
+    }
+    .profUl{
+        margin-top: -120px;
+
+    }
+    }
+
+
+@media only screen and (max-width:780px) {
+
+    .profUl{
+        margin-top: -120px;
+    }
+    .jersey{
+        width: 450px;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+
+    .editContainer {
+        width: 90%;
+        margin-top: 250px;
+    }
+    
+    .input {
+        padding: 8px 0;
+    }
+    
+    .editbutton{
+        padding: 3px 0;
+    }
+    
+    .error1 { 
+        font-size: 18px;
+        padding: 2px;
+      }
+      .h2 {
+          font-size: 16px;
+      }
+
+    }
+
+
+@media only screen and (max-width:560px) {
+
+    .jersey{
+        width: 350px;
+        height: 700px;
+        margin: 0 auto;
+    }
+
+    .profButton2{
+        width: 100px;
+        transform: translate(10%, -200%)
+    }
+
+    }
